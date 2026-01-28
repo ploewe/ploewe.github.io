@@ -41,6 +41,17 @@
             padding-bottom: 20px;
         }
 
+         /* --- HIER IST DAS PROFILBILD --- */
+        .profilbild {
+            width: 150px;           /* Größe des Bildes */
+            height: 150px;          /* Höhe muss gleich der Breite sein für einen Kreis */
+            border-radius: 50%;     /* Macht das Bild rund */
+            object-fit: cover;      /* Schneidet das Bild zu, damit es nicht verzerrt wirkt */
+            border: 4px solid #fff; /* Weißer Rand um das Bild (optional) */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Schatten für Tiefe */
+            margin-bottom: 20px;    /* Abstand nach unten zum Text */
+        }
+
         h1 {
             color: var(--primary-color);
             margin-bottom: 5px;
@@ -154,6 +165,8 @@
 
     <div class="container">
         <header>
+            <img src="image.jpg" alt="Mugshot of Peter Loewe" class="profilbild">
+            
             <h1>Dr. Peter H. Löwe</h1>
             <div class="subtitle">Geoscientist & Open Science Advocate</div>
             
