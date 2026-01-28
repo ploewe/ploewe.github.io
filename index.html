@@ -1,33 +1,267 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Peter Loewe on github.io</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Peter H. Löwe - Geoscientist</title>
+    <meta name="description" content="Personal website of Dr. Peter H. Löwe, Geoscientist specializing in Geoinformatics, Remote Sensing, and Open Science.">
+    <style>
+        /* --- CSS Styles --- */
+        :root {
+            --primary-color: #2c3e50; /* Dunkles Blau/Grau */
+            --accent-color: #27ae60;  /* Grün für "Geoscience" */
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        /* Header & Hero */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .disclaimer {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+            background-color: #fff8e1;
+            padding: 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 10px;
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Specific Layouts */
+        .two-col {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .col {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Tags / Badges style for memberships */
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: #eef2f5;
+            color: var(--primary-color);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            border: 1px solid #dce4ec;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+                padding: 15px;
+            }
+            h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Meet Dr. Peter Loewe!</h1>
-    <b>
-    <p>This is the personal website of Dr. Peter H. Loewe, the geoscientist (neither the folk singer, boating instructor or other person by this name).</p>
-    <b>
-    <p>Peter holds a PhD in Geography (Dr. rer. nat. - summa cum laude) and has a background in Geoinformatics, Remote Sensing, Open Science, A.I. and Digital Research Infrastructures. </p> 
-    <b>
-    <p>He believes in the great outdoors, travel, gardening and homemade BBQ.</p>
-    <b>
-<ul>
-  <li>Studied at the University of Würzburg and the University of Texas at Austin.</li>
-  <li>Work experience at Leibniz and Helmholtz research institutes, the satellite remote sensing industry and a UNESCO Geopark.</li>
-  <li>Founder of the startup FUKENGRUEVEN, supported by the Bavarian FLÜGGE programme.</li>
-  <li>Lecturer at the University of Potsdam, Humboldt University Berlin and Hochschule Neubrandenburg.</li>
-  <li>Evangelist for the international Open Geospatial Community.</li>
-  <li>Elected charter member of the international OSGeo Foundation and also Vice President of Open GeoScience.</li>
-  <li>Open Source GRASS GIS project steering commitee (2016 - 2021).</li>
-  <li>Member of the Research Data Alliance (RDA), RDA Deutschland e.V., Wikipedia and FOSSGIS e.V.</li>
-  <li>Member of the European Geoscience Union (EGU) and the American Geophysical Union (AGU).</li>
-  <li>Elected convener for the EGU programme group “Data, Software and Computing Infrastructures across Earth and Space Sciences” (ESSI2) and invited speaker for the Great Debate 2022 on Open Science.</li>
-  <li>NSF Geospatial Software Institute conceptualization project.</li>
-  <li>Eastern Partnership on E-Infrastructure (EaPEC by GÉANT) in Armenia, Moldova and Belarus.</li>
-  <li>Editor for the Open Source GIS chapter of the Springer Handbook of Geographic Information (2nd. Ed.).</li>
-  <li>FOSS4GAsia Conference 2026: Invited Keynote</li>
 
-</ul>
+    <div class="container">
+        <header>
+            <h1>Dr. Peter H. Löwe</h1>
+            <div class="subtitle">Geoscientist & Open Science Advocate</div>
+            
+            <div class="disclaimer">
+                This is the personal website of Dr. Peter H. Löwe, the geoscientist 
+                (neither the folk singer, boating instructor or other person by this name).
+            </div>
+        </header>
+
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    Peter holds a PhD in Geography (<em>Dr. rer. nat. - summa cum laude</em>) and has a strong background in 
+                    <strong>Geoinformatics, Remote Sensing, Open Science, A.I. and Digital Research Infrastructures</strong>.
+                </p>
+                <p>
+                    Beyond his research, he believes in the great outdoors, travel, gardening, and homemade BBQ.
+                </p>
+            </section>
+
+            <!-- Education & Work -->
+            <div class="two-col">
+                <section class="col">
+                    <h2>Education</h2>
+                    <ul>
+                        <li><strong>University of Würzburg</strong></li>
+                        <li><strong>University of Texas at Austin</strong></li>
+                    </ul>
+                </section>
+
+                <section class="col">
+                    <h2>Work Experience</h2>
+                    <ul>
+                        <li>Leibniz and Helmholtz research institutes</li>
+                        <li>Satellite remote sensing industry</li>
+                        <li>UNESCO Geopark</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Entrepreneurship & Teaching -->
+            <div class="two-col">
+                <section class="col">
+                    <h2>Startup & Teaching</h2>
+                    <p>
+                        <strong>Founder of FUKENGRUEVEN</strong><br>
+                        Supported by the Bavarian FLÜGGE programme.
+                    </p>
+                    <p>
+                        <strong>Lecturer at:</strong>
+                    </p>
+                    <ul>
+                        <li>University of Potsdam</li>
+                        <li>Humboldt University Berlin</li>
+                        <li>Hochschule Neubrandenburg</li>
+                    </ul>
+                </section>
+
+                <section class="col">
+                    <h2>Open Source Leadership</h2>
+                    <ul>
+                        <li><strong>Evangelist</strong> for the international Open Geospatial Community.</li>
+                        <li><strong>Elected charter member</strong> of the international OSGeo Foundation.</li>
+                        <li><strong>Vice President</strong> of Open GeoScience.</li>
+                        <li><strong>GRASS GIS Project Steering Committee</strong> (2016 - 2021).</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Memberships & Community -->
+            <section id="memberships">
+                <h2>Memberships & Community Engagement</h2>
+                <p>
+                    Peter is an active member of the following organizations:
+                </p>
+                <div class="tag-container">
+                    <span class="tag">Research Data Alliance (RDA)</span>
+                    <span class="tag">RDA Deutschland e.V.</span>
+                    <span class="tag">Wikipedia</span>
+                    <span class="tag">FOSSGIS e.V.</span>
+                    <span class="tag">European Geoscience Union (EGU)</span>
+                    <span class="tag">American Geophysical Union (AGU)</span>
+                </div>
+                
+                <h3 style="margin-top: 20px; font-size: 1.1rem; color: var(--primary-color);">EGU Roles</h3>
+                <ul>
+                    <li><strong>Elected convener</strong> for the EGU programme group “Data, Software and Computing Infrastructures across Earth and Space Sciences” (ESSI2).</li>
+                    <li><strong>Invited speaker</strong> for the Great Debate 2022 on Open Science.</li>
+                </ul>
+            </section>
+
+            <!-- Projects & Publications -->
+            <section id="projects">
+                <h2>Selected Projects & Publications</h2>
+                <ul>
+                    <li><strong>NSF Geospatial Software Institute</strong> conceptualization project.</li>
+                    <li><strong>Eastern Partnership on E-Infrastructure (EaPEC by GÉANT)</strong> in Armenia, Moldova, and Belarus.</li>
+                    <li><strong>Editor</strong> for the Open Source GIS chapter of the <em>Springer Handbook of Geographic Information (2nd. Ed.)</em>.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Dr. Peter H. Löwe. Hosted on GitHub Pages.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
